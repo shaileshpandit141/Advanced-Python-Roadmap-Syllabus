@@ -20,34 +20,48 @@
 :root {
 
     /* | For Display Text  */
-    --DISPLAY--SIZE: 4rem;	/* 64px */
+    --DISPLAY--SIZE: 4rem;
+    /* 64px */
     --DISPLAY--LINE--HEIGHT: 44px;
 
     /* | For Heading Text  */
-    --HEADING--SIZE: 2.813rem;	/* 45px */
+    --HEADING--SIZE: 2.813rem;
+    /* 45px */
     --HEADING--LINE--HEIGHT: 36px;
 
     /* | For Title Text  */
-    --TITLE--SIZE: 1.25rem;	/* 20px */
+    --TITLE--SIZE: 1.25rem;
+    /* 20px */
     --TITLE--LINE--HEIGHT: 24px;
     --TITLE--LETTER--SPACING: 0.15px;
 
     /* | For Label Text  */
-    --LABLE--SIZE: 1.125rem;	/* 18px */
+    --LABLE--SIZE: 1.125rem;
+    /* 18px */
     --LABEL--LINE--HEIGHT: 18px;
     --LABEL--LETTER--SPACING: 0.5px;
 
     /* | For Body Text  */
-    --BODY--M--SIZE: 0.875rem;		/* 14px */
+    --BODY--M--SIZE: 0.875rem;
+    /* 14px */
     --BODY--M--LINE-HEIGHT: 20px;
     --BODY--M--LETTER--SPACING: 0.25px;
-    
+
 }
 
 
 input,
 button {
-    font-family: "Roboto", Arial, Helvetica, sans-serif ;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -55,7 +69,7 @@ button {
 body {
     background-color: #2c2c2c;
     color: azure;
-    font-family: "Roboto", Arial, Helvetica, sans-serif ;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     width: 100%;
     height: fit-content;
@@ -64,10 +78,6 @@ body {
     align-items: center;
 }
 
-
-html::-webkit-scrollbar {
-    display: none;
-}
 
 
 /* || Main Container Styles */
@@ -127,6 +137,9 @@ html::-webkit-scrollbar {
 
 
 .roadmaps--cont {
+    width: 100%;
+    max-width: 750px;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -223,6 +236,8 @@ html::-webkit-scrollbar {
     letter-spacing: var(--BODY--M--LETTER--SPACING);
     line-height: var(--BODY--M--LINE-HEIGHT);
     font-weight: 400;
+    width: 100%;
+    max-width: inherit;
 }
 
 
@@ -234,4 +249,3 @@ html::-webkit-scrollbar {
     letter-spacing: var(--BODY--M--LETTER--SPACING);
     line-height: var(--BODY--M--LINE-HEIGHT);
 }
-
