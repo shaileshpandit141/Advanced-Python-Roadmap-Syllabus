@@ -159,7 +159,7 @@ export default [
     },
     {
         id: 18,
-        heading: 'Others Topics',
+        heading: 'Benefit From',
         subHeadings: [
             'Remember that becoming an advanced Python developer is a continuous journey.It is important to keep learning, practicing, and exploring real - world projects to solidify your skills.Good luck on your Python learning journey!'
         ]
